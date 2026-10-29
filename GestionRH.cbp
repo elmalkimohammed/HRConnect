@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GestionRH" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GestionRH" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/Program Files/MySQL/MySQL Server 9.3/include" />
+					<Add directory="./" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/Program Files/MySQL/MySQL Server 9.3/lib/libmysql.lib" />
+					<LinkerExe value="Linker" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GestionRH" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="./" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/Users/pc/OneDrive/Bureau/GestionRH/mysql-connector-c++-9.3.0-winx64/include" />
+			<Add directory="C:/Users/pc/OneDrive/Bureau/GestionRH/mysql-connector-c++-9.3.0-winx64/include/jdbc" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/Users/pc/OneDrive/Bureau/GestionRH/mysql-connector-c++-9.3.0-winx64/lib64/vs14/mysqlcppconn.lib" />
+			<Add directory="C:/Users/pc/OneDrive/Bureau/GestionRH/mysql-connector-c++-9.3.0-winx64/lib64/vs14" />
+		</Linker>
+		<Unit filename="D_H.cpp" />
+		<Unit filename="D_H.h" />
+		<Unit filename="Direction.cpp" />
+		<Unit filename="Direction.h" />
+		<Unit filename="Employe.cpp" />
+		<Unit filename="Employe.h" />
+		<Unit filename="Employe_Basic_Info.cpp" />
+		<Unit filename="Employe_Basic_Info.h" />
+		<Unit filename="Gestionnaire.cpp" />
+		<Unit filename="Gestionnaire.h" />
+		<Unit filename="Paiement.cpp" />
+		<Unit filename="Paiement.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
